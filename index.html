@@ -20,7 +20,7 @@
 <body class="fst-inter text-capitalize">
     <main id="app">
         <div class="container mb-3">
-            <h1 class="text-center">course work 1 lessons</h1>
+            <h1 class="text-center">After School App</h1>
 
             <div class="d-flex">
                 <button class="btn btn-primary fs-3 p-3 rounded-circle ms-auto " v-on:click="showCheckOut"
@@ -28,7 +28,7 @@
             </div>
 
             <div class="container" v-if="showProduct">
-                <div class="d-flex align-items-end gap-3 flex-wrap">
+                <div class="d-flex align-items-end gap-3 flex-wrap mb-3">
 
                     <div>
                         <input type="text" class="form-control" v-model="searchTerm"
@@ -75,7 +75,7 @@
                             </div>
                             <div class="card-footer">
                                 <!-- add to cart button -->
-                                <button class="btn btn-primary rounded-0" v-on:click='addToCart(product)'
+                                <button class="btn btn-success rounded-0" v-on:click='addToCart(product)'
                                     :disabled="product.spaces === 0">Add to
                                     cart</button>
                                 <!-- remove from cart button -->

@@ -14,7 +14,7 @@ var app = new Vue({
       //a user must provide “Name” and “Phone number” before can click on the checkout button (1%)
       username: "",
       phonenumber: "",
-      backendURL: "",
+      backendURL: "http://localhost:3000/",
     },
   
     // after the VUE app is launched, invoke the get the lessons from backend
@@ -101,7 +101,8 @@ var app = new Vue({
         });
         alert("order successful!");
         this.showProduct = true;
-      },
+        this.cart = []
+        },
       // check if to show checkout page
       showCheckOut() {
         this.showProduct = this.showProduct ? false : true;
